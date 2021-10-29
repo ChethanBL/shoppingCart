@@ -16,7 +16,7 @@
 <hr>
 <div class="row" style=" height: 75vh; margin-top: 0em ;overflow: auto; ">
     <div class="eachItem card " *ngFor="let i of menu | filter : searchText">
-        <div> <img [src]="i.img" style="margin-left: 4em;"> </div>
+        <div> <img [src]="i.img" style="margin-left: 4em; width:30% ;height:8em"> </div>
         <div style="font-weight: bold; text-align: center">{{i.p_name}}</div>
         <div style="font-weight: bold; text-align: left"> FROM : {{i.p_details}}</div>
         <div class="btn btn-primary" (click)='additem(i)'> add to cart</div>
