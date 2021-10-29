@@ -1,0 +1,64 @@
+<!-- <div class="header">
+    <div class="row">
+        <div class="col-4">
+            <img alt="Logo" style="width:30% ;height:8em" src="https://media-exp1.licdn.com/dms/image/C510BAQFmCn9rDJP3Og/company-logo_200_200/0/1531893853394?e=2159024400&v=beta&t=ZuqI75K3QwbNWJVdilVYk_Zhge9Xlf9oEiXurkOxEfA" class="logo" />
+        </div>
+        <div style="font-size:1.5em;text-align:center;font-weight: bold;margin-top: 1.5em;" class="col-4">Cart Items</div>
+        <div class="col-4">
+            <button class="col-3" (click)="cancel()" type="button" style="float: right;margin:2em 2em 0 0" class="btn btn-danger"> X <span class="badge badge-light"></span>
+</button>
+        </div>
+    </div>
+</div> -->
+
+<div class="row" style="height:9em">
+
+    <div class="col-6">
+        <img alt="Logo" style="width:30% ;height:8em" src="https://media-exp1.licdn.com/dms/image/C510BAQFmCn9rDJP3Og/company-logo_200_200/0/1531893853394?e=2159024400&v=beta&t=ZuqI75K3QwbNWJVdilVYk_Zhge9Xlf9oEiXurkOxEfA" class="logo" />
+    </div>
+    <div class="col-4">
+
+    </div>
+    <div class="col-2">
+        <button class="col-3" (click)="cancel()" type="button" style="float: right;margin:2em 2em 0 0" class="btn btn-danger"> X <span class="badge badge-light"></span></button>
+    </div>
+
+</div>
+<hr>
+
+
+<!-- <div style=" height: 75vh; margin-top: 7em ;"> -->
+<div style=" width: 60%;margin-left: 20%;" class="card" *ngFor="let item of cartItems ">
+    <div class="row" style="height:12em;margin-bottom: 0.5em;">
+        <div class="col-6">
+            <img style="height: 8em;text-align: center;" [src]="item.img" alt="product image">
+            <p style="font-size:1.1em;text-align: center;">{{item.p_name}}</p>
+
+        </div>
+        <div class="col-2" style="margin-top: 6em"><strong> X {{item.quantity}} </strong></div>
+        <div class="col-2" style="margin-top: 6em"><strong> =  {{item.final_price}}  RS</strong></div>
+    </div>
+</div>
+
+<div class="col-12">
+    <hr>
+</div>
+
+<div style=" width: 60%;margin-left: 20%;" class="footer">
+    <div class="row">
+        <div style="text-align:right" class="col-2">Total Items {{cartItems.length}}</div>
+        <div style="text-align:right" class="col-5">Total Price</div>
+        <div style="text-align:left;margin-left: 1em;" class="col-4">{{total_amount}} RS</div>
+    </div>
+</div>
+
+
+<!-- <div class="btn btn-danger" style="border-radius: 25px;font-weight: bold;">
+                &nbsp;-&nbsp;</div>
+            <span style="padding-left: 0.5em; padding-right: 0.5em;">&nbsp;<strong>{{i.quantity}}</strong>&nbsp;</span> -->
+
+
+<!-- <div class="item-quantity" style="margin-top: 40px">
+
+</div> -->
+<!-- <div class="col-4 a" style="text-align: center;font-weight: bold;">RM {{ (i.quantity * i.price).toFixed(2) }}</div> -->

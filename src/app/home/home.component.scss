@@ -1,0 +1,69 @@
+.appContainer {
+    width: 100%;
+    border: 1px solid rgb(125, 151, 221);
+    // max-width: 600px;
+    margin: 0 auto 0 auto;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #405065;
+}
+
+.header {
+    width: 98.5%;
+    position: fixed;
+    border-bottom: 1px solid gray;
+}
+
+.search-hero {
+    max-width: 500px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.headers {
+    width: 50%;
+    position: fixed;
+    border-bottom: 1px solid gray;
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    background: #00000070;
+}
+
+.product-overlay {
+    padding: 1em;
+    position: fixed;
+    z-index: 1100;
+    left: 25%;
+    top: 10vh;
+    height: 80vh;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(244, 246, 248);
+    box-shadow: 0 0 5px 0 rgb(235, 233, 233);
+}
+
+.eachItem {
+    height: fit-content;
+    width: 30%;
+    margin: 1em 1em 1em 2.3em;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 gray;
+}
+
+.center {
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 45vh;
+}
